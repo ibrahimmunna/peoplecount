@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Count</title>
+</head>
+<style>
+    #count {
+        background-color: blue;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+        box-shadow: 20%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+    }
+    
+    #count:hover {
+        background-color: beige;
+    }
+    
+    #head {
+        text-align: center;
+        border: 5px;
+        border-radius: 5px;
+        border-width: 5px;
+        border-style: solid;
+    }
+</style>
+
+<body>
+    <h1 id="head">Passenger Count</h1>
+    <h2>People Entered</h2>
+    <h2 id="count_ppl">0</h2>
+    <button id="count" onclick="increase()">Increase</button>
+    <button id="count" onclick="decrease()">Decrease</button><br><br>
+    <div>
+        <button id="save-btn" onclick="save()">Save</button>
+        <p id="save-el">Previous entries: </p>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
